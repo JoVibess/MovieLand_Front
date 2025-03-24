@@ -43,21 +43,23 @@ onMounted(() => {
 </script>
 
 <template>
-  <ul>
-    <DateItem
-      v-for="date in days"
-      :key="date.toISOString()"
-      :date="date"
-      @click="getMovies(date)"
-      :class="{
-        active: selectedDate == date.toISOString().split('T')[0],
-      }"
-    />
-  </ul>
-  <div class="movies">
-    <img src="../assets/film.png" alt="" />
-    <h2>Movies</h2>
-  </div>
+  <section>
+    <ul>
+      <DateItem
+        v-for="date in days"
+        :key="date.toISOString()"
+        :date="date"
+        @click="getMovies(date)"
+        :class="{
+          active: selectedDate == date.toISOString().split('T')[0],
+        }"
+      />
+    </ul>
+    <div class="movies">
+      <img src="../assets/film.png" alt="" />
+      <h2>Movies</h2>
+    </div>
+  </section>
   <MovieItem v-for="movie in movies" :key="movie.id" :movie="movie" />
 
   <!-- :movie="movie" Passe la valeur au composant -->

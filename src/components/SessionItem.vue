@@ -15,14 +15,14 @@ const goToReservation = () => {
 <template>
   <div>
     <h4>
-      Schedule : {{ new Date(props.session.start_time).toLocaleTimeString() }}
+      Time : {{ new Date(props.session.start_time).toLocaleTimeString() }}
     </h4>
     <button class="loginLogout" @click="goToReservation">Reserve</button>
   </div>
 </template>
 
 <style scoped>
-.loginLogout {
-  margin-top: 4px;
+h4 {
+  margin: 10px 0 14px 0;
 }
 </style>
