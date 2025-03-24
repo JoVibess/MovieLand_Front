@@ -1,0 +1,38 @@
+html {
+  margin: 0;
+  height: 100%;
+  background-color: #f3f3f3;
+  font-size: 15px;
+}
+
+body {
+  padding: 0 60px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+#app {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+  body {
+    padding: 0 24px;
+  }
+}
