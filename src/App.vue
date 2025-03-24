@@ -43,7 +43,9 @@ function login() {
       </button>
     </div>
   </header>
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
   <footer>
     <div class="logo">
       <h1>MovieLand</h1>
