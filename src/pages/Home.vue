@@ -55,11 +55,11 @@ onMounted(() => {
         }"
       />
     </ul>
-    <div class="movies">
-      <img src="../assets/film.png" alt="" />
-      <h2>Movies</h2>
-    </div>
   </section>
+  <div class="movies">
+    <img src="../assets/film.png" alt="" />
+    <h2>Movies</h2>
+  </div>
   <MovieItem v-for="movie in movies" :key="movie.id" :movie="movie" />
 
   <!-- :movie="movie" Passe la valeur au composant -->
@@ -79,6 +79,7 @@ h1 {
 .movies {
   display: flex;
   align-items: center;
+  margin-left: 60px;
   img {
     width: 20px;
     height: 20px;

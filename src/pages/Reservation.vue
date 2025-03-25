@@ -103,7 +103,7 @@ onMounted(() => {
     <h1>Reservation</h1>
   </section>
   <MovieItem v-if="movie" :movie="movie" />
-  <section>
+  <section class="seatSection">
     <h2>Choose a seat</h2>
 
     <div class="seating-grid">
@@ -151,7 +151,10 @@ onMounted(() => {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
-
+.seatSection {
+  display: flex;
+  flex-direction: column;
+}
 h1 {
   font-family: "Montserrat", sans-serif;
   text-align: start;

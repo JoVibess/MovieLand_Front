@@ -12,25 +12,38 @@ async function login() {
 </script>
 
 <template>
-  <h1>Login</h1>
-  <div class="input">
-    <h2>Email :</h2>
-    <input v-model="email" type="email" />
-    <h2>Password :</h2>
-    <input v-model="password" type="password" />
-  </div>
-
-  <button class="loginLogout" @click="login" type="submit">Login</button>
+  <section>
+    <div class="input">
+      <h1>Login</h1>
+      <h2>Email :</h2>
+      <input v-model="email" type="email" />
+      <h2>Password :</h2>
+      <input v-model="password" type="password" />
+      <button class="loginLogout" @click="login" type="submit">Login</button>
+    </div>
+  </section>
 </template>
 
 <style>
-.input {
-  margin-bottom: 10px;
-  margin-inline: auto;
-  h2 {
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 6px 0 2px 0;
+section {
+  display: flex;
+  justify-content: center;
+  .input {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 6px 0 2px 0;
+    }
+    button {
+      margin-top: 20px;
+    }
   }
 }
 

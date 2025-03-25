@@ -14,7 +14,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <section>
+  <section class="titleReserv">
     <div class="titleStyle">
       <div class="lineStyle"></div>
       <h1>
@@ -55,22 +55,24 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.titleStyle {
-  display: flex;
-  .lineStyle {
-    width: 6px;
-    height: 60px;
-    background: linear-gradient(#007bff, transparent);
-    margin-right: 8px;
-    margin-top: 4px;
-    border-radius: 2px 2px 0 0;
-  }
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    text-align: start;
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    font-weight: 600;
+titleReserv {
+  .titleStyle {
+    display: flex;
+    .lineStyle {
+      width: 6px;
+      height: 60px;
+      background: linear-gradient(#007bff, transparent);
+      margin-right: 8px;
+      margin-top: 4px;
+      border-radius: 2px 2px 0 0;
+    }
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      text-align: start;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
   }
 }
 .movieSection {
