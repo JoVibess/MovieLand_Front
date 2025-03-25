@@ -23,6 +23,6 @@ const goToReservation = () => {
 
 <style scoped>
 h4 {
-  margin: 10px 0 14px 0;
+  margin: 10px 0 10px 0;
 }
 </style>

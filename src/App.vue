@@ -183,4 +183,37 @@ footer {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  footer {
+    .logo {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 762px) {
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    height: 420px;
+    .logo {
+      width: 100%;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    .menu {
+      width: 100%;
+      border: none;
+      border-top: solid 1px white;
+      border-bottom: solid 1px white;
+    }
+    .contact {
+      width: 100%;
+    }
+  }
+}
 </style>
